@@ -94,7 +94,7 @@ include "connection.php";
                                     $rs = Database::search("SELECT * FROM `gender`");
                                     $num = $rs->num_rows;
 
-                                    for ($x = 0; $x < $n; $x++) {
+                                    for ($x = 0; $x < $num; $x++) {
                                         $data = $rs->fetch_assoc();
                                     ?>
                                         <option value="<?php echo $data["id"]; ?>">
