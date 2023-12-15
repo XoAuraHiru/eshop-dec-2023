@@ -1,6 +1,6 @@
 <?php
 
-    include "connection.php";
+include "connection.php";
 
 ?>
 
@@ -90,12 +90,26 @@
                                 <label class="form-label">Gender</label>
                                 <select class="form-control" id="gender">
 
-                                    
+                                    <?php
+                                    $rs = Database::search("SELECT * FROM `gender`");
+                                    $num = $rs->num_rows;
 
-                                        <option value="1">Male</option>
-                                        <option value="2">Female</option>
+                                    for ($x = 0; $x < $n; $x++) {
+                                        $data = $rs->fetch_assoc();
+                                    ?>
+                                        <option value="<?php echo $data["id"]; ?>">
+                                            <?php echo $data["gender_name"]; ?>
+                                        </option>
 
-                                    
+                                    <?php
+                                    }
+                                    ?>
+
+
+
+
+
+
                                 </select>
                             </div>
 
