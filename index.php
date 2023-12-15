@@ -104,12 +104,6 @@ include "connection.php";
                                     <?php
                                     }
                                     ?>
-
-
-
-
-
-
                                 </select>
                             </div>
 
@@ -118,7 +112,7 @@ include "connection.php";
                             </div>
 
                             <div class="col-12 col-lg-6 d-grid">
-                                <button class="btn btn-dark">Already have an account? Sign In</button>
+                                <button class="btn btn-dark" onclick="changeView();">Already have an account? Sign In</button>
                             </div>
 
                         </div>
@@ -155,7 +149,7 @@ include "connection.php";
                                 <button class="btn btn-primary">Sign In</button>
                             </div>
                             <div class="col-12 col-lg-6 d-grid">
-                                <button class="btn btn-danger">New to eShop? Join Now</button>
+                                <button class="btn btn-danger" onclick="changeView();">New to eShop? Join Now</button>
                             </div>
                         </div>
                     </div>
