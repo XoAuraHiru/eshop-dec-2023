@@ -1,13 +1,13 @@
 <?php
 
-
+require_once realpath(__DIR__ . '/vendor/autoload.php');
 
 class Database{
     public static $connection;
 
     public static function setUpConnection(){
         if(!isset(Database::$connection)){
-            require_once realpath(__DIR__ . '/vendor/autoload.php');
+            
             $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
             $dotenv->load();
             $db_host = $_ENV["DB_HOST"];

@@ -15,12 +15,12 @@
 
 @font-face {
     font-family: "Quicksand";
-    src: url("font/Quicksand-Medium.ttf");
+    src: url("fonts/Quicksand-Medium.ttf");
 }
 
 @font-face {
     font-family: "Honey";
-    src: url("font/HoneyScript-Light.ttf");
+    src: url("fonts/HoneyScript-Light.ttf");
 }
 
 *{
