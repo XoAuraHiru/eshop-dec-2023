@@ -108,7 +108,7 @@ include "connection.php";
                             </div>
 
                             <div class="col-12 col-lg-6 d-grid">
-                                <button class="btn btn-primary">Sign Up</button>
+                                <button class="btn btn-primary" onclick="signup();">Sign Up</button>
                             </div>
 
                             <div class="col-12 col-lg-6 d-grid">
