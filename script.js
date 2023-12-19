@@ -27,7 +27,16 @@ function signup(){
     request.onreadystatechange = function(){
         if(request.status == 200 & request.readyState == 4){
             var response = request.responseText
-            alert(response)
+            
+            if(response == "success"){
+                document.getElementById("msg").innerHTML = "Registration Successfull";
+                document.getElementById("msg").className = "alert alert-success"
+                document.getElementById("msgdiv").className = "d-block"
+            } else {
+                document.getElementById("msg").innerHTML = response;
+                document.getElementById("msg").className = "alert alert-danger"
+                document.getElementById("msgdiv").className = "d-block"
+            }
         }
     }
     request.open("POST", "php/signupProcess.php", true)
